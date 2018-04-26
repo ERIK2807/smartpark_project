@@ -1,0 +1,607 @@
+
+/*Para pantallas menores a 480px*/
+	*{
+		margin: 0;
+	}
+
+
+	body{
+		margin: 0px;
+		padding: 0px;
+	}
+
+	#contenedor{
+		width: auto;
+		margin: auto;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		background: #ecf0f1;
+		border-radius: 0px;
+		overflow: hidden; /*necesario para que se aplique radius ver propiedad*/
+	}
+	
+	header{
+		height:auto;
+		background: white;
+	}
+
+	header video{
+		position:relative;
+		max-width: 100%;
+		z-index: 1; /* llevar al fondo */
+		opacity: .8;
+	}
+
+/*----------barra de navegacion------------*/
+nav {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    font-size: 12px;
+    font-family:Montserrat Alternates;
+    text-align: center;
+    padding: 15px 5px;
+    text-decoration: none;
+}
+
+nav li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: MediumSeaGreen;
+}
+
+/*----------contenido-------------------*/
+ .estado{
+  position:relative;
+  background: #333; /*negro*/
+  color:#fff;
+  display:inline-flex;
+  font-size:17px;
+  margin: 10px 10px;
+  padding: 20px;
+  width: 150px;
+  height: 80px;
+  left: 20px;
+  border-radius: 13px 13px;
+  text-decoration: none;
+ }
+
+.caja{
+  position:relative;
+  color:#333;
+  display:inline-flex;
+  font-size:15px;
+  text-align: justify;
+  margin: 0px 0px;
+  margin-left: 20px;
+  padding: 20px;
+  width: auto;
+  border-radius: 13px 13px;
+  text-decoration: none;
+
+}
+
+.caja2{
+  position:relative;
+  color:white;
+  display:inline-flex;
+  font-size:15px;
+  text-align: justify;
+  margin: 0px 0px;
+  margin-left: 45px;
+  padding: 20px;
+  width: auto;
+  border-radius: 13px 13px;
+  text-decoration: none;
+
+}
+.caja.position1{
+  left: 0px;
+  top: 0px;
+}
+
+ .estado.font{
+ 		font-family: Montserrat Alternates;
+ }
+
+ .font{
+ 		font-family: Montserrat Alternates;
+ }
+
+ .font2{
+ 		font-family: Merienda One;
+ }
+
+	section{
+		width:auto;
+		height:auto;
+		background: #ecf0f1;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	section h2{
+		font-size: 20px;
+		font-family: Montserrat Alternates;
+		color: #333;
+		text-align:center;
+		line-height: 10px;
+	}
+
+	aside{
+		width:auto;
+		height: auto;
+		background: #444;
+		margin-top: 40px;
+		margin-bottom: 20px;
+	}
+
+	aside img{
+		width: 40%;
+		margin-bottom: 20px;
+		margin: 30px 40px;
+		display: inline;
+		filter: grayscale(30%);
+	}
+
+	aside h2{
+		font-size: 20px;
+		color: white;
+		text-align: center;
+		line-height: 50px; 
+	}
+
+	aside h3{
+		clear:all;
+		color: red;
+		display: inline;
+
+	}
+
+	footer{
+		clear: both; /* permite quejar abajo, ver propiedades */
+		width: auto;
+		height: 90px;
+		background: #444;
+		margin-bottom: -10px;
+		border-radius: 20px;
+		overflow: hidden;
+	}
+
+	footer{
+		font-size: 10px;
+		color: white;
+		text-align: center;
+		line-height: 30px;
+	}
+
+
+/*para pantallas entre 480 y 768px*/
+@media (min-width: 480px) {
+
+	body{
+		margin: 0px;
+		padding: 0px;
+	}
+
+
+
+	#contenedor{
+		width: 768px;
+		margin: auto;
+		margin-top: 0px;
+		margin-bottom: 20px;
+		background:  #ecf0f1;
+		border-radius: 10px;
+		overflow: hidden; /*necesario para que se aplique radius ver propiedad*/
+	}
+	
+	header{
+		height: 355px;
+		background: white;
+	}
+
+	header video{
+		position:relative;
+		max-width: 100%;
+		/*transform: translateX(-50%) translateY(-50%);*/
+		z-index: 1; /* llevar al fondo */
+		opacity: .8;
+	}
+/*----------barra de navegacion------------*/
+nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    font-family:Montserrat Alternates;
+    text-align: center;
+    padding: 23px 17px;
+    text-decoration: none;
+}
+
+nav li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: MediumSeaGreen;
+}
+
+/*----------contenido-------------------*/
+.estado{
+  position:relative;
+  background: #333; /*negro*/
+  color:#fff;
+  display:inline-flex;
+  font-size:20px;
+  margin: 40px 0px;
+  margin-left: 86px;
+  padding: 20px;
+  width: 200px;
+  height: 150px;
+  border-radius: 13px 13px;
+  text-decoration: none;
+ }
+
+.caja{
+  position:relative;
+  color:#333;
+  display:inline-flex;
+  font-size:15px;
+  text-align: justify;
+  margin: 0px 0px;
+  margin-left: 45px;
+  padding: 20px;
+  width: 400px;
+  border-radius: 13px 13px;
+  text-decoration: none;
+
+}
+
+.caja2{
+  position:relative;
+  color:white;
+  display:inline-flex;
+  font-size:15px;
+  text-align: justify;
+  margin: 0px 0px;
+  margin-left: 45px;
+  padding: 20px;
+  width: 400px;
+  border-radius: 13px 13px;
+  text-decoration: none;
+
+}
+.caja.position1{
+  left: 110px;
+  top: 50px;
+}
+
+ .estado.font{
+ 		font-family: Montserrat Alternates;
+ }
+
+ .font{
+ 		font-family: Montserrat Alternates;
+ }
+
+ .font2{
+ 		font-family: Merienda One;
+ }
+	section{
+		width:768px;
+		height: 800px;
+		background:#ecf0f1;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	section h2{
+		font-size: 30px;
+		font-family: Montserrat Alternates;
+		color: #333;
+		text-align: center;
+		line-height: 70px;
+	}
+
+	aside{
+		width:768px;
+		height: 560px;
+		background: #444;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	
+	aside img{
+		width: 15%;
+		margin-bottom: 20px;
+		margin: 30px 40px;
+		display: inline;
+		filter: grayscale(30%);
+	}
+	
+	aside h2{
+		font-size: 30px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		color: white;
+		text-align: center;
+		line-height: 50px; 
+	}
+
+	aside h3{
+		clear:all;
+		display: inline;
+
+	}
+
+	footer{
+		clear: both; /* permite quejar abajo, ver propiedades */
+		width: auto;
+		height: 100px;
+		background: #333;
+		margin-bottom: 10px;
+		border-radius: 20px;
+		overflow: hidden;
+	}
+
+	footer h2{
+		font-size: 15px;
+		color: white;
+		text-align: center;
+		line-height: 30px;
+	}
+
+
+}
+
+
+
+/*para pantallas mayores a 768px*/
+@media (min-width: 768px) {
+	
+	*{
+		margin: 0px;
+	}
+
+	body{
+		margin: 0px;
+		padding: 0px;
+	}
+
+
+	#contenedor{
+		width: 1190px;
+		margin: auto;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		border-radius: 0px;
+		background: #ecf0f1;
+		overflow: hidden; /*necesario para que se aplique radius ver propiedad*/
+	}
+
+
+	
+	header{
+		height: 551px;
+		background: white;
+	}
+
+	header video{
+		position:relative;
+		max-width: 100%;
+		/*transform: translateX(-50%) translateY(-50%);*/
+		z-index: 1; /* llevar al fondo */
+		opacity: .8;
+	}
+
+/*
+	header h2{
+		position: relative;
+		font-family:Montserrat Alternates;
+		color:MediumSeaGreen;
+		text-shadow: 3px 0px #2c3e50;
+		font-size: 70px;
+		left: -385px;
+		top: -150px;
+		z-index: 2;
+		opacity: 1;
+	}
+	header h3{
+		position: relative;
+		font-size: 21px;
+		font-family:Merienda One;
+		color:#2c3e50;
+		text-shadow: 1px 0px #2c3e50;
+		left: 20px;
+		top: -190px;
+		z-index: 3;
+		opacity: 1;
+	}
+*/
+
+
+
+/*----------barra de navegacion------------*/
+nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    font-family:Montserrat Alternates;
+    font-size: 17px;
+    text-align: center;
+    padding: 23px 17px;
+    text-decoration: none;
+}
+
+nav li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: MediumSeaGreen;
+}
+
+.sticky {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index:2;
+}
+/*----------contenido-------------------*/
+ .estado{
+  position:relative;
+  background: #555; /*negro*/
+  color:#fff;
+  display:inline-flex;
+  font-size:20px;
+  margin: 40px 0px;
+  margin-left: 45px;
+  padding: 20px;
+  width: 200px;
+  height: 150px;
+  border-radius: 13px 13px;
+  text-decoration: none;
+ }
+
+.caja{
+  position:relative;
+  color:#666;
+  display:inline-flex;
+  font-size:15px;
+  text-align: justify;
+  margin: 0px 0px;
+  margin-left: 45px;
+  padding: 20px;
+  width: 500px;
+  border-radius: 13px 13px;
+  text-decoration: none;
+
+}
+
+.caja2{
+  position:relative;
+  color:white;
+  display:inline-flex;
+  font-size:15px;
+  text-align: justify;
+  margin: 0px 0px;
+  margin-left: 45px;
+  padding: 20px;
+  width: 800px;
+  border-radius: 13px 13px;
+  text-decoration: none;
+
+}
+.caja.position1{
+  left: 290px;
+  top: 50px;
+}
+
+ 
+ .font{
+ 		font-family: Montserrat Alternates;
+ }
+
+	section{
+		width:auto;
+		height: 500px;
+		background: #ecf0f1;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	section h2{
+		font-size: 30px;
+		font-family: Montserrat Alternates;
+		color: #333;
+		text-align: center;
+		line-height: 70px;
+	}
+
+	aside{
+		width:auto;
+		height: 560px;
+		background: #555;
+		margin-top: 40px;
+		margin-bottom: 20px;
+	}
+
+	aside img{
+		width: 15%;
+		margin-bottom: 20px;
+		margin: 30px 40px;
+		display: inline;
+		filter: grayscale(30%);
+	}
+
+	aside h2{
+		font-size: 30px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		color: white;
+		text-align: center;
+		line-height: 50px; 
+	}
+
+	aside h3{
+		clear:all;
+		color: white;
+		display: inline;
+
+	}
+
+
+	footer{
+		clear: both; /* permite quejar abajo, ver propiedades */
+		width: auto;
+		height: 100px;
+		background: #555;
+		margin-bottom: 10px;
+		border-radius: 20px;
+		overflow: hidden;
+	}
+
+	footer h2{
+		font-size: 15px;
+		color: white;	
+		text-align: center;
+		line-height: 50px;
+	}
+
+}

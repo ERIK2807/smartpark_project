@@ -1,0 +1,146 @@
+  #contenedor{
+    width: auto;
+    height: auto;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-radius: 0px;
+    background: #ecf0f1;
+    overflow: hidden; /*necesario para que se aplique radius ver propiedad*/
+  }
+
+ /* estilos generales */
+ .estado{
+  background: #444; /*negro*/
+  color:#fff;
+  display:inline-flex;
+  font-family: Montserrat Alternates;
+  font-size:15px;
+  margin: 20px 10px;
+  padding: 20px;
+  width: 60px;
+  height: 90px;
+  align-items:justify;
+  border-radius: 1px 1px;
+  text-decoration: none;
+
+ }
+
+/*Estilos letra*/
+.font{
+    font-family: Montserrat Alternates;
+    text-decoration: none;
+ }
+
+/*Colores*/
+.estado.verde{
+  background: #00b894;  
+}
+
+.estado.rojo{
+  background:#d63031;
+}
+
+/*posición aparcamientos*/
+.estado.p1{
+  position: absolute;
+  display: inline-flex;
+  left: 50px;
+  top: 270px;
+  opacity: .7;
+  z-index:2;
+}
+
+.estado.p2{
+  position: absolute;
+  display: inline-flex;
+  left: 156px;
+  top:270px;
+  opacity: .7;
+  z-index:2;
+}
+.estado.p3{
+  position: absolute;
+  display: inline-flex;
+  left: 260px;
+  top:270px;
+  opacity: .7;
+  z-index:2;
+}
+
+*{
+  margin: 0px;
+}
+
+header{
+  width: auto;
+  height: 100px;
+  background:#444;
+  color: white;
+}
+
+nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    font-family:Montserrat Alternates;
+    font-size: 17px;
+    text-align: center;
+    padding: 23px 17px;
+    text-decoration: none;
+}
+
+nav li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: MediumSeaGreen;
+}
+
+section{
+    width:auto;
+    height:600px;
+    font-family: Montserrat Alternates;
+    background: #ecf0f1;
+    margin-top: 20px;
+    margin-bottom: 30px;  
+}
+
+section img{
+  position: absolute;
+  margin: 40px 20px;
+  left: 0px;
+  top: 235px;
+  float:left;
+  opacity: .8;
+  z-index: 1;
+}
+
+  footer{
+    clear: both; /* permite quejar abajo, ver propiedades */
+    width: auto;
+    height: 80px;
+    background: #333;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  footer h2{
+    font-size: 15px;
+    color: white; 
+    text-align: center;
+    line-height: 35px;
+  }
